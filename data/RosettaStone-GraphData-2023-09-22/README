@@ -1,0 +1,25 @@
+Digital Integrated Circuit Graph Data
+SKY130-HS Rosetta Stone Data
+2023-05-23  by Donghyeon Koh and W. Rhett Davis, NC State University
+
+These files were generated with physical design of the Rosetta Stone
+Netlist examples (https://github.com/ABKGroup/RosettaStone.git) 
+for the Skywater 130nm process and High-Speed standard-cell 
+library (sky130hs). 
+
+The database-units-to-user-units (DBUtoUU) conversion factor
+for this dataset is 1000.  Integer dimensions should be 
+divided by this factor to get real dimensions in microns.
+
+The file settings.csv contains the following settings for each variant:
+CORE_UTILIZATION   - ratio of cell area to core area 
+MAX_ROUTING_LAYER  - maximum allowed layer for routing (complete list
+                     of layers is in counter_congestion.npz 'layerList')
+CLK_PER            - clock period constraint (i.e. target) in units of ns
+CLK_UNCERTAINTY    - clock uncertainty (currently 0.2 ns for all variants)
+FLOW_STAGE         - Design flow stage at which the data was generated
+
+There are 6 other settings relating to the layout of the power distribution
+network, but these are fixed for all variants and can be ignored for now:
+HSTRAP_LAYER, HSTRAP_WIDTH, HSTRAP_PITCH, VSTRAP_LAYER, VSTRAP_WIDTH,
+and VSTRAP_PITCH
